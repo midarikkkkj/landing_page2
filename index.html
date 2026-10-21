@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="card-body">
+    <div class="pesquisa">
+      <input type="text" id="pesquisar" placeholder="digite o nome de um jogo...">
+    </div>
+    <div class="container-cards">
+      <div class="card-jogos">
+        <img src="imgs/resident.jpg" class="card-img-top" alt="">
+        <h4 class="card-title">Resident Evil Requiem</h4>
+        <p class="card-descricao" style="display: none;">Resident Evil Requiem é um jogo eletrônico de survival horror
+          de
+          2026 desenvolvido e
+          publicado pela Capcom. É o décimo primeiro título principal da série Resident Evil, sendo a sequência de
+          Resident Evil Village.</p>
+        <button onclick="verMais(this)">Ver Mais</button>
+      </div>
+
+
+      <div class="card-jogos">
+        <img src="imgs/mario.jpg" class="card-img-top" alt="">
+        <h4 class="card-title">Mario Kart</h4>
+        <p class="card-descricao" style="display: none;">Mario Kart é uma série de jogos de corrida, baseada na franquia
+          Mario, desenvolvida e
+          publicada pela Nintendo. Os jogadores escolhem um personagem e competem em corridas de kart em diversas pistas
+          temáticas. Durante a corrida, podem utilizar itens para atrapalhar outros jogadores ou ganhar vantagem.</p>
+        <button onclick="verMais(this)">Ver Mais</button>
+      </div>
+
+
+      <div class="card-jogos">
+        <img src="imgs/zelda.jpg" class="card-img-top" alt="">
+        <h4 class="card-title">The Legend of Zelda </h4>
+        <p class="card-descricao" style="display: none;">The Legend of Zelda: Tears of the Kingdom é um jogo eletrônico
+          de
+          ação-aventura desenvolvido e publicado pela Nintendo. Foi lançado em 12 de maio de 2023 para Nintendo Switch.
+        </p>
+        <button onclick="verMais(this)">Ver Mais</button>
+      </div>
+
+      <div class="card-jogos">
+        <img src="imgs/gta.jpg" class="card-img-top" alt="">
+        <h4 class="card-title">Grand Theft Auto VI</h4>
+        <p class="card-descricao" style="display: none;">Grand Theft Auto VI é um futuro jogo eletrônico de
+          ação-aventura
+          desenvolvido e publicado pela Rockstar Games. Será o oitavo título principal da franquia Grand Theft Auto,
+          sendo
+          o sucessor de Grand Theft Auto V e o décimo sexto jogo eletrônico da série
+        </p>
+        <button onclick="verMais(this)">Ver Mais</button>
+      </div>
+
+      <div class="card-jogos">
+        <img src="imgs/cs.jpg" class="card-img-top" alt="">
+        <h4 class="card-title">Counter-Strike 2</h4>
+        <p class="card-descricao" style="display: none;">Counter-Strike 2, também conhecido como CS2, é um jogo tático
+          multijogador de tiro em primeira pessoa anunciado em 22 de março de 2023 e lançado em 27 de setembro de 2023.
+          Desenvolvido e publicado pela Valve, é o quinto jogo da série principal Counter-Strike.
+        </p>
+        <button onclick="verMais(this)">Ver Mais</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function verMais(botao) {
+      let descricao = botao.previousElementSibling;
+
+      if (descricao.style.display == "none") {
+        descricao.style.display = "block";
+      } else {
+        descricao.style.display = "none";
+      }
+    }
+  </script>
+
+  <script>
+    document.getElementById("pesquisar").addEventListener("input", function () {
+      let texto = this.value.toLowerCase();
+      let cards = document.querySelectorAll(".card-jogos");
+
+      cards.forEach(function (card) {
+        let nome = card.querySelector(".card-title").textContent.toLowerCase();
+
+        if (nome.includes(texto)) {
+          card.style.display = "";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
