@@ -14,11 +14,20 @@
 
 <body>
   <section class="card-body">
+
     <div class="pesquisa">
-      <input type="text" id="pesquisar" placeholder="digite o nome de um jogo...">
+      <h2>JOGOS.COM</h2>
+      <p>Encontre seu jogo favorito aqui ;) </p>
+
+      <div class="caixa-pesquisa">
+        <span>🔍</span>
+        <input type="text" id="pesquisar" placeholder="Pesquise seu jogo...">
+        <span class="controle">🎮</span>
+      </div>
     </div>
+
     <div class="container-cards">
-      <div class="card-jogos">
+      <div class="card-jogos" data-gif="gifs/resident.gif">
         <img src="imgs/resident.jpg" class="card-img-top" alt="">
         <h4 class="card-title">Resident Evil Requiem</h4>
         <p class="card-descricao" style="display: none;">Resident Evil Requiem é um jogo eletrônico de survival horror
@@ -27,10 +36,22 @@
           publicado pela Capcom. É o décimo primeiro título principal da série Resident Evil, sendo a sequência de
           Resident Evil Village.</p>
         <button onclick="verMais(this)">Ver Mais</button>
+
+
+        <div class="avaliacao">
+          <span class="estrela" data-nota="1">★</span>
+          <span class="estrela" data-nota="2">★</span>
+          <span class="estrela" data-nota="3">★</span>
+          <span class="estrela" data-nota="4">★</span>
+          <span class="estrela" data-nota="5">★</span>
+          <p class="nota">Avalie este jogo</p>
+        </div>
+
+
       </div>
 
 
-      <div class="card-jogos">
+      <div class="card-jogos" data-gif="gifs/mario.gif">
         <img src="imgs/mario.jpg" class="card-img-top" alt="">
         <h4 class="card-title">Mario Kart</h4>
         <p class="card-descricao" style="display: none;">Mario Kart é uma série de jogos de corrida, baseada na franquia
@@ -38,10 +59,22 @@
           publicada pela Nintendo. Os jogadores escolhem um personagem e competem em corridas de kart em diversas pistas
           temáticas. Durante a corrida, podem utilizar itens para atrapalhar outros jogadores ou ganhar vantagem.</p>
         <button onclick="verMais(this)">Ver Mais</button>
+
+
+        <div class="avaliacao">
+          <span class="estrela" data-nota="1">★</span>
+          <span class="estrela" data-nota="2">★</span>
+          <span class="estrela" data-nota="3">★</span>
+          <span class="estrela" data-nota="4">★</span>
+          <span class="estrela" data-nota="5">★</span>
+          <p class="nota">Avalie este jogo</p>
+        </div>
+
+
       </div>
 
 
-      <div class="card-jogos">
+      <div class="card-jogos" data-gif="gifs/zelda.gif">
         <img src="imgs/zelda.jpg" class="card-img-top" alt="">
         <h4 class="card-title">The Legend of Zelda </h4>
         <p class="card-descricao" style="display: none;">The Legend of Zelda: Tears of the Kingdom é um jogo eletrônico
@@ -49,9 +82,21 @@
           ação-aventura desenvolvido e publicado pela Nintendo. Foi lançado em 12 de maio de 2023 para Nintendo Switch.
         </p>
         <button onclick="verMais(this)">Ver Mais</button>
+
+
+        <div class="avaliacao">
+          <span class="estrela" data-nota="1">★</span>
+          <span class="estrela" data-nota="2">★</span>
+          <span class="estrela" data-nota="3">★</span>
+          <span class="estrela" data-nota="4">★</span>
+          <span class="estrela" data-nota="5">★</span>
+          <p class="nota">Avalie este jogo</p>
+        </div>
+
+
       </div>
 
-      <div class="card-jogos">
+      <div class="card-jogos" data-gif="gifs/lucia.gif">
         <img src="imgs/gta.jpg" class="card-img-top" alt="">
         <h4 class="card-title">Grand Theft Auto VI</h4>
         <p class="card-descricao" style="display: none;">Grand Theft Auto VI é um futuro jogo eletrônico de
@@ -61,9 +106,41 @@
           o sucessor de Grand Theft Auto V e o décimo sexto jogo eletrônico da série
         </p>
         <button onclick="verMais(this)">Ver Mais</button>
+
+
+        <div class="avaliacao">
+          <span class="estrela" data-nota="1">★</span>
+          <span class="estrela" data-nota="2">★</span>
+          <span class="estrela" data-nota="3">★</span>
+          <span class="estrela" data-nota="4">★</span>
+          <span class="estrela" data-nota="5">★</span>
+          <p class="nota">Avalie este jogo</p>
+        </div>
+
+
       </div>
 
-      <div class="card-jogos">
+      <div class="card-jogos" data-gif="gifs/kratos.gif">
+        <img src="imgs/god.png" class="card-img-top" alt="">
+        <h4 class="card-title">God of War II </h4>
+        <p class="card-descricao" style="display: none;">God of War II é um jogo eletrônico de ação-aventura e hack and
+          slash desenvolvido pela Santa Monica Studio e publicado pela Sony Computer Entertainment.</p>
+        <button onclick="verMais(this)">Ver Mais</button>
+
+
+        <div class="avaliacao">
+          <span class="estrela" data-nota="1">★</span>
+          <span class="estrela" data-nota="2">★</span>
+          <span class="estrela" data-nota="3">★</span>
+          <span class="estrela" data-nota="4">★</span>
+          <span class="estrela" data-nota="5">★</span>
+          <p class="nota">Avalie este jogo</p>
+        </div>
+
+
+      </div>
+
+      <div class="card-jogos" data-gif="gifs/cs.gif">
         <img src="imgs/cs.jpg" class="card-img-top" alt="">
         <h4 class="card-title">Counter-Strike 2</h4>
         <p class="card-descricao" style="display: none;">Counter-Strike 2, também conhecido como CS2, é um jogo tático
@@ -71,9 +148,55 @@
           Desenvolvido e publicado pela Valve, é o quinto jogo da série principal Counter-Strike.
         </p>
         <button onclick="verMais(this)">Ver Mais</button>
+
+
+        <div class="avaliacao">
+          <span class="estrela" data-nota="1">★</span>
+          <span class="estrela" data-nota="2">★</span>
+          <span class="estrela" data-nota="3">★</span>
+          <span class="estrela" data-nota="4">★</span>
+          <span class="estrela" data-nota="5">★</span>
+          <p class="nota">Avalie este jogo</p>
+        </div>
+
+
+      </div>
+
+      <div class="card-jogos" data-gif="gifs/kitana.gif">
+        <img src="imgs/mortalk.jpg" class="card-img-top" alt="">
+        <h4 class="card-title">Mortal Kombat 11</h4>
+        <p class="card-descricao" style="display: none;">Mortal Kombat 11 é um jogo eletrônico de luta de 2019
+          desenvolvido pela NetherRealm Studios e publicado pela Warner Bros. Interactive Entertainment. É a décima
+          primeira edição principal da série de jogos eletrônicos de luta, Mortal Kombat, e uma continuação direta de
+          Mortal Kombat X. </p>
+        <button onclick="verMais(this)">Ver Mais</button>
+
+
+        <div class="avaliacao">
+          <span class="estrela" data-nota="1">★</span>
+          <span class="estrela" data-nota="2">★</span>
+          <span class="estrela" data-nota="3">★</span>
+          <span class="estrela" data-nota="4">★</span>
+          <span class="estrela" data-nota="5">★</span>
+          <p class="nota">Avalie este jogo</p>
+        </div>
+
+
       </div>
     </div>
   </section>
+
+
+  <div id="janela-gif" class="janela-gif">
+    <div class="conteudo-gif">
+      <button id="fechar-gif">X</button>
+
+      <h2 id="titulo-gif"></h2>
+
+      <img id="imagem-gif" src="" alt="Prévia do jogo">
+    </div>
+  </div>
+
 
   <script>
     function verMais(botao) {
@@ -103,6 +226,65 @@
       });
     });
   </script>
+
+
+  <script>
+    let cards = document.querySelectorAll(".card-jogos");
+    let janela = document.getElementById("janela-gif");
+    let imagem = document.getElementById("imagem-gif");
+    let titulo = document.getElementById("titulo-gif");
+    let fechar = document.getElementById("fechar-gif");
+
+    cards.forEach(function (card) {
+      card.addEventListener("click", function () {
+        let gif = card.getAttribute("data-gif");
+        let nome = card.querySelector(".card-title").textContent;
+
+        imagem.src = gif;
+        titulo.textContent = nome;
+
+        janela.style.display = "flex";
+      });
+    });
+
+    fechar.addEventListener("click", function () {
+      janela.style.display = "none";
+      imagem.src = "";
+    });
+
+    janela.addEventListener("click", function (event) {
+      if (event.target === janela) {
+        janela.style.display = "none";
+        imagem.src = "";
+      }
+    });
+  </script>
+
+
+  <script>
+    document.querySelectorAll(".avaliacao").forEach(function (avaliacao) {
+      let estrelas = avaliacao.querySelectorAll(".estrela");
+      let texto = avaliacao.querySelector(".nota");
+
+      estrelas.forEach(function (estrela) {
+        estrela.addEventListener("click", function () {
+          let nota = Number(this.dataset.nota);
+
+          estrelas.forEach(function (item) {
+            if (Number(item.dataset.nota) <= nota) {
+              item.classList.add("ativa");
+            } else {
+              item.classList.remove("ativa");
+            }
+          });
+
+          texto.textContent = "Sua nota: " + nota + "/5 estrelas";
+        });
+      });
+    });
+  </script>
+
+
 
 </body>
 

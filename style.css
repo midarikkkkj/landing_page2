@@ -1,30 +1,22 @@
-.pesquisa {
-    text-align: center;
-    margin: 20px;
-}
-
-#pesquisar {
-    width: 80%;
-    max-width: 400px;
-    padding: 12px;
-    border: 1px solid pink;
-    border-radius: 10px;
-    font-size: 16px;
-}
-
 .card-body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.card-jogos{
+.card-jogos {
     width: 320px;
     padding: 15px;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 254, 254);
     border-radius: 10px;
     margin: 10px;
     color: #fcf9f9;
+    transition: 0.3s;
+}
+
+.card-jogos:hover {
+    box-shadow: 0 0 15px rgba(229, 255, 0, 0.938);
+    transform: translateY(-5px);
 }
 
 .card-img-top {
@@ -38,31 +30,136 @@
 }
 
 body {
-    background-image: url(imgs/fundo3.jpg);
+    background-image: url(gifs/fundo.gif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+
 .pesquisa {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 25px 0 30px;
+    text-align: center;
+    margin: 30px 0;
 }
 
-#pesquisar {
-    width: 100%;
-    max-width: 400px;
-    padding: 12px;
-    border: 2px solid #a00e0e;
-    border-radius: 10px;
+.pesquisa h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 8px;
+    text-shadow: 0 0 10px #8a4dff;
+}
+
+.pesquisa p {
+    color: #b8c5ff;
+    margin-bottom: 20px;
+}
+
+.caixa-pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+    padding: 10px 15px;
+    background: rgba(10, 15, 50, 0.9);
+    border: 2px solid #7545ff;
+    border-radius: 30px;
+    box-shadow: 0 0 12px #7545ff;
+    transition: 0.3s;
+}
+
+.caixa-pesquisa:focus-within {
+    border-color: #00d9ff;
+    box-shadow: 0 0 18px #00d9ff;
+}
+
+.caixa-pesquisa input {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
     font-size: 16px;
 }
+
+.caixa-pesquisa input::placeholder {
+    color: #a9b2d8;
+}
+
+.controle {
+    font-size: 23px;
+}
+
 
 .container-cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.janela-gif {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.conteudo-gif {
+    background: #17152B;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.conteudo-gif img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#fechar-gif {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+
+.avaliacao {
+    margin: 8px 0;
+}
+
+.estrela {
+    color: #777;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.estrela:hover {
+    color: #ffd700;
+}
+
+.estrela.ativa {
+    color: #ffd700;
+}
+
+.nota {
+    color: white;
+    font-size: 12px;
+    margin: 4px 0;
 }
