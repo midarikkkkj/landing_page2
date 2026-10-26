@@ -10,13 +10,14 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <section class="card-body">
 
     <div class="pesquisa">
-      <h2>JOGOS.COM</h2>
+      <h1 class="titulo-neon">TEIA GAMER</h1>
       <p>Encontre seu jogo favorito aqui ;) </p>
 
       <div class="caixa-pesquisa">
@@ -46,8 +47,6 @@
           <span class="estrela" data-nota="5">★</span>
           <p class="nota">Avalie este jogo</p>
         </div>
-
-
       </div>
 
 
@@ -69,17 +68,56 @@
           <span class="estrela" data-nota="5">★</span>
           <p class="nota">Avalie este jogo</p>
         </div>
-
-
       </div>
 
+
+      <div class="card-jogos" data-gif="gifs/mine.gif">
+        <img src="imgs/mine.webp" class="card-img-top" alt="">
+        <h4 class="card-title">Minecraft</h4>
+        <p class="card-descricao" style="display: none;">Minecraft é um jogo eletrônico sandbox de sobrevivência de 2011
+          desenvolvido e publicado pela desenvolvedora sueca Mojang Studios. Originalmente criado por Markus "Notch"
+          Persson usando a linguagem de programação Java, a primeira versão alfa pública foi lançada em 17 de maio de
+          2009.</p>
+        <button onclick="verMais(this)">Ver Mais</button>
+
+
+        <div class="avaliacao">
+          <span class="estrela" data-nota="1">★</span>
+          <span class="estrela" data-nota="2">★</span>
+          <span class="estrela" data-nota="3">★</span>
+          <span class="estrela" data-nota="4">★</span>
+          <span class="estrela" data-nota="5">★</span>
+          <p class="nota">Avalie este jogo</p>
+        </div>
+      </div>
+
+      <div class="card-jogos" data-gif="gifs/fortnite.gif">
+        <img src="imgs/fortnite.webp" class="card-img-top" alt="">
+        <h4 class="card-title">Fortnite</h4>
+        <p class="card-descricao" style="display: none;">Fortnite é um jogo eletrônico multijogador online e uma
+          plataforma de jogos desenvolvida pela Epic Games e lançada em 2017. Está disponível em sete modos distintos,
+          que compartilham a jogabilidade e o mesmo motor gráfico..</p>
+        <button onclick="verMais(this)">Ver Mais</button>
+
+
+        <div class="avaliacao">
+          <span class="estrela" data-nota="1">★</span>
+          <span class="estrela" data-nota="2">★</span>
+          <span class="estrela" data-nota="3">★</span>
+          <span class="estrela" data-nota="4">★</span>
+          <span class="estrela" data-nota="5">★</span>
+          <p class="nota">Avalie este jogo</p>
+        </div>
+      </div>
 
       <div class="card-jogos" data-gif="gifs/zelda.gif">
         <img src="imgs/zelda.jpg" class="card-img-top" alt="">
         <h4 class="card-title">The Legend of Zelda </h4>
-        <p class="card-descricao" style="display: none;">The Legend of Zelda: Tears of the Kingdom é um jogo eletrônico
+        <p class="card-descricao" style="display: none;">The Legend of Zelda: Tears of the Kingdom é um jogo
+          eletrônico
           de
-          ação-aventura desenvolvido e publicado pela Nintendo. Foi lançado em 12 de maio de 2023 para Nintendo Switch.
+          ação-aventura desenvolvido e publicado pela Nintendo. Foi lançado em 12 de maio de 2023 para Nintendo
+          Switch.
         </p>
         <button onclick="verMais(this)">Ver Mais</button>
 
@@ -123,7 +161,8 @@
       <div class="card-jogos" data-gif="gifs/kratos.gif">
         <img src="imgs/god.png" class="card-img-top" alt="">
         <h4 class="card-title">God of War II </h4>
-        <p class="card-descricao" style="display: none;">God of War II é um jogo eletrônico de ação-aventura e hack and
+        <p class="card-descricao" style="display: none;">God of War II é um jogo eletrônico de ação-aventura e hack
+          and
           slash desenvolvido pela Santa Monica Studio e publicado pela Sony Computer Entertainment.</p>
         <button onclick="verMais(this)">Ver Mais</button>
 
@@ -136,15 +175,32 @@
           <span class="estrela" data-nota="5">★</span>
           <p class="nota">Avalie este jogo</p>
         </div>
+      </div>
+
+      <div class="card-jogos" data-gif="gifs/juri.gif">
+        <img src="imgs/street.jpg" class="card-img-top" alt="">
+        <h4 class="card-title">Street Fighter 6 </h4>
+        <p class="card-descricao" style="display: none;">Street Fighter 6 é um jogo eletrônico de luta de 2023
+          desenvolvido e publicado pela Capcom. É a sétima entrada principal da franquia Street Fighter</p>
+        <button onclick="verMais(this)">Ver Mais</button>
 
 
+        <div class="avaliacao">
+          <span class="estrela" data-nota="1">★</span>
+          <span class="estrela" data-nota="2">★</span>
+          <span class="estrela" data-nota="3">★</span>
+          <span class="estrela" data-nota="4">★</span>
+          <span class="estrela" data-nota="5">★</span>
+          <p class="nota">Avalie este jogo</p>
+        </div>
       </div>
 
       <div class="card-jogos" data-gif="gifs/cs.gif">
         <img src="imgs/cs.jpg" class="card-img-top" alt="">
         <h4 class="card-title">Counter-Strike 2</h4>
         <p class="card-descricao" style="display: none;">Counter-Strike 2, também conhecido como CS2, é um jogo tático
-          multijogador de tiro em primeira pessoa anunciado em 22 de março de 2023 e lançado em 27 de setembro de 2023.
+          multijogador de tiro em primeira pessoa anunciado em 22 de março de 2023 e lançado em 27 de setembro de
+          2023.
           Desenvolvido e publicado pela Valve, é o quinto jogo da série principal Counter-Strike.
         </p>
         <button onclick="verMais(this)">Ver Mais</button>

@@ -163,3 +163,12 @@ body {
     font-size: 12px;
     margin: 4px 0;
 }
+
+.titulo-neon {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 28px;
+    text-align: center;
+    color: #ff3030;
+    text-shadow: 0 0 10px #ff3030,
+        0 0 20px #168bff;
+}
